@@ -1,0 +1,1 @@
+export { quickSort as default } from "./common";

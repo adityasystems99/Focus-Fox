@@ -1,0 +1,1 @@
+export { gnomeSort as default } from "./advanced";

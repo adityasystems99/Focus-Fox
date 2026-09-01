@@ -1,0 +1,2 @@
+import { useEffect } from "react"; import { useSortingStore } from "../store/sortingStore";
+export function useSorting(){ const step=useSortingStore((s)=>s.step), isRunning=useSortingStore((s)=>s.isRunning), isPaused=useSortingStore((s)=>s.isPaused), speed=useSortingStore((s)=>s.speed); useEffect(()=>{if(!isRunning||isPaused)return; const timer=window.setInterval(step,Math.max(35,220-speed*2)); return()=>window.clearInterval(timer)},[isRunning,isPaused,speed,step]); return useSortingStore(); }

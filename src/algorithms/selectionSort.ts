@@ -1,0 +1,1 @@
+export { selectionSort as default } from "./common";

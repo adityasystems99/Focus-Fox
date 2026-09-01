@@ -1,0 +1,1 @@
+export { insertionSort as default } from "./common";

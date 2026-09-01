@@ -1,0 +1,1 @@
+export { InfoPanel as AlgorithmInfo } from "./AppPanels";

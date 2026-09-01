@@ -1,0 +1,1 @@
+export { mergeSort as default } from "./common";

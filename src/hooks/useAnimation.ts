@@ -1,0 +1,2 @@
+import { useSortingStore } from "../store/sortingStore";
+export const useAnimation = () => useSortingStore((state) => ({ step: state.step, play: state.play, pause: state.pause, reset: state.reset, isRunning: state.isRunning, isPaused: state.isPaused }));
